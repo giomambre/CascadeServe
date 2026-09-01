@@ -1,7 +1,7 @@
 <h1 align="center">CascadeServe</h1>
 
 <p align="center">
-  A hybrid Gemma serving gateway that chooses local or API inference from explicit quality, latency, cost, privacy, and availability constraints.
+  A personal ML systems project exploring how to route Gemma inference between local hardware and hosted APIs under real request constraints.
 </p>
 
 <p align="center">
@@ -150,7 +150,6 @@ worker/          Python gRPC worker, evaluation and load tools
 proto/           Shared inference contract
 demo/            Dependency-free routing UI
 benchmarks/      Datasets, raw results and experiment protocol
-docs/            CV narrative and interview walkthrough
 ```
 
-Read the [benchmark methodology](benchmarks/README.md) or the [CV-ready narrative](docs/cv-narrative.md) for the full evidence and honest claim boundaries.
+Read the [benchmark methodology](benchmarks/README.md) for experiment details, raw artifacts, and limitations.

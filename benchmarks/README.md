@@ -71,7 +71,7 @@ Environment: Windows 11, Python 3.12.10, Java control plane, `llama.cpp` b10689 
 
 On the seeded 50-row GSM8K sample, both tiers completed every RPC. E2B reached 22/50 (44%) with p50 3.077 s; E4B reached 34/50 (68%) with p50 5.487 s. The paired outcomes were 21 solved by both, 1 only by E2B, 13 only by E4B, and 15 by neither. An oracle cascade that escalates only the 13 E2B misses recovered 35/50 (70%) while escalating 26% of examples.
 
-The first learned prompt-only router fit on these 50 labels is intentionally retained as a development result, not a CV claim: its held-out accuracy was 40%, precision 20%, recall 33%, and ROC-AUC 0.286. This is a useful failure signal: prompt length alone cannot reliably predict which GSM8K examples E2B will miss, so the next routing iteration should use calibrated first-pass uncertainty or a larger training set. Raw tier outputs, paired outcomes, and labels are in `results/gemma-4-*-gsm8k-50*` and `router-training.jsonl`.
+The first learned prompt-only router fit on these 50 labels is intentionally retained as a development result: its held-out accuracy was 40%, precision 20%, recall 33%, and ROC-AUC 0.286. This is a useful failure signal: prompt length alone cannot reliably predict which GSM8K examples E2B will miss, so the next routing iteration should use calibrated first-pass uncertainty or a larger training set. Raw tier outputs, paired outcomes, and labels are in `results/gemma-4-*-gsm8k-50*` and `router-training.jsonl`.
 
 ## Preliminary scheduler comparison
 
@@ -88,7 +88,7 @@ The current controlled workload uses two `echo-v1` workers:
 | Round robin | 762.81 | 82.521 | 83.600 | 1,000 / 2,000 |
 | Least in flight | 3,234.25 | 40.723 | 43.530 | 1,780 / 2,000 |
 
-These are single-run engineering results. They validate the experimental setup but are not yet stable CV claims. The load tool now supports discarded warm-up requests and repeated trials on one gRPC channel; these preliminary artifacts will be superseded after collecting fixed-revision aggregate statistics.
+These single-run engineering results validate the experimental setup. The load tool now supports discarded warm-up requests and repeated trials on one gRPC channel; these preliminary artifacts will be superseded after collecting fixed-revision aggregate statistics.
 
 The SmolLM2 result validates the generic Transformers adapter on CPU. It is not Gemma validation and is not a substitute for the planned Gemma 4 E2B/E4B quantized quality and CUDA benchmarks.
 
@@ -101,6 +101,6 @@ The repeated workload keeps the same heterogeneous echo workers and concurrency,
 | Round robin | 770.63 ± 2.52 | 82.734 ± 0.387 | 83.973 ± 1.293 | 50.0% |
 | Least in flight | 3,232.73 ± 70.51 | 40.968 ± 0.190 | 41.863 ± 0.414 | 88.5% |
 
-On this controlled local workload, least-in-flight delivered 4.19× the mean throughput and reduced mean p95 latency by 50.5% relative to round robin. This measures scheduling behavior with deterministic worker delays; it is not a claim about model inference throughput.
+On this controlled local workload, least-in-flight delivered 4.19× the mean throughput and reduced mean p95 latency by 50.5% relative to round robin. This measures scheduling behavior with deterministic worker delays, not model inference throughput.
 
 Environment: Windows 11, Python 3.12.10, AMD64 processor with 24 logical CPUs, Java control plane, two Python workers, concurrency 32. Full trial summaries and raw request records are stored in `results/*-repeated.json`.
