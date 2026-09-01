@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package cascadeserve.v1;
+
+option java_multiple_files = true;
+option java_package = "com.giomambretti.cascadeserve.v1";
+option java_outer_classname = "InferenceProto";
+
+service CascadeService {
+  rpc Generate(GenerateRequest) returns (GenerateResponse);
+}
+
+service InferenceWorker {
+  rpc Generate(GenerateRequest) returns (GenerateResponse);
+  rpc Health(HealthRequest) returns (HealthResponse);
+}
+
+message GenerateRequest {
+  string request_id = 1;
+  string prompt = 2;
+  int32 max_new_tokens = 3;
+  int64 latency_budget_ms = 4;
+  double max_cost_usd = 5;
+  bool require_local = 6;
+  string preferred_region = 7;
+}
+
+message GenerateResponse {
+  string request_id = 1;
+  string output = 2;
+  string worker_id = 3;
+  string model_id = 4;
+  int64 worker_latency_ms = 5;
+  int64 total_latency_ms = 6;
+  int32 attempts = 7;
+  string selected_tier = 8;
+  string routing_policy = 9;
+  double routing_score = 10;
+  int32 input_tokens = 11;
+  int32 output_tokens = 12;
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  string worker_id = 1;
+  string model_id = 2;
+  bool ready = 3;
+}

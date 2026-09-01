@@ -1,0 +1,70 @@
+services:
+  gemma-e2b:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command:
+      - -hf
+      - google/gemma-4-E2B-it-qat-q4_0-gguf:Q4_0
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - -ngl
+      - "99"
+      - -c
+      - "4096"
+      - --jinja
+      - --metrics
+    gpus: all
+    volumes:
+      - gemma-cache:/root/.cache/huggingface
+
+  gemma-e4b:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command:
+      - -hf
+      - google/gemma-4-E4B-it-qat-q4_0-gguf:Q4_0
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - -ngl
+      - "99"
+      - -c
+      - "4096"
+      - --jinja
+      - --metrics
+    gpus: all
+    volumes:
+      - gemma-cache:/root/.cache/huggingface
+
+  worker-1:
+    depends_on:
+      - gemma-e2b
+    environment:
+      WORKER_ID: gemma-4-e2b
+      MODEL_BACKEND: llama_cpp
+      MODEL_ID: google/gemma-4-E2B-it
+      MODEL_SERVER_URL: http://gemma-e2b:8080
+      MODEL_SERVER_TIMEOUT_SECONDS: 120
+    ports:
+      - "50052:50052"
+
+  worker-2:
+    depends_on:
+      - gemma-e4b
+    environment:
+      WORKER_ID: gemma-4-e4b
+      MODEL_BACKEND: llama_cpp
+      MODEL_ID: google/gemma-4-E4B-it
+      MODEL_SERVER_URL: http://gemma-e4b:8080
+      MODEL_SERVER_TIMEOUT_SECONDS: 120
+    ports:
+      - "50053:50052"
+
+  control-plane:
+    environment:
+      SCHEDULER_POLICY: least_in_flight
+      ROUTING_POLICY: prompt_length
+
+volumes:
+  gemma-cache:

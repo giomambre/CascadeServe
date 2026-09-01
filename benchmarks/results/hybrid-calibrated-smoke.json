@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-09-01",
+  "method": "live_smoke_validation",
+  "target": "127.0.0.1:50051",
+  "endpoint_metadata": {
+    "local": {
+      "model": "google/gemma-4-E2B-it",
+      "quality": 0.44,
+      "expected_latency_ms": 3077
+    },
+    "remote": {
+      "model": "gemma-4-31b-it",
+      "quality": 0.94,
+      "expected_latency_ms": 6042
+    }
+  },
+  "requests": [
+    {
+      "contract": "automatic",
+      "worker_id": "gemma-api",
+      "model_id": "gemma-4-31b-it",
+      "total_latency_ms": 1375,
+      "attempts": 1,
+      "routing_score": 0.3858,
+      "input_tokens": 7,
+      "output_tokens": 3
+    },
+    {
+      "contract": "latency_budget_4000_ms",
+      "worker_id": "gemma-4-e2b",
+      "model_id": "google/gemma-4-E2B-it",
+      "total_latency_ms": 283,
+      "attempts": 1,
+      "routing_score": 0.2023,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    {
+      "contract": "require_local",
+      "worker_id": "gemma-4-e2b",
+      "model_id": "google/gemma-4-E2B-it",
+      "total_latency_ms": 150,
+      "attempts": 1,
+      "routing_score": 0.2023,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ],
+  "limitations": "Single short-response requests validate routing decisions and telemetry, not throughput or general latency."
+}

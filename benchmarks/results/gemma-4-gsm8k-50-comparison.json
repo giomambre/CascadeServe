@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-08-31T12:51:28.638315+00:00",
+  "dataset": "..\\benchmarks\\datasets\\gsm8k-test-50.jsonl",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "inputs": {
+    "small_results": "..\\benchmarks\\results\\gemma-4-e2b-gsm8k-50.jsonl",
+    "large_results": "..\\benchmarks\\results\\gemma-4-e4b-gsm8k-50.jsonl"
+  },
+  "small": {
+    "examples": 50,
+    "successful": 50,
+    "failed": 0,
+    "correct": 22,
+    "accuracy": 0.44,
+    "accuracy_on_success": 0.44,
+    "client_latency_ms": {
+      "p50": 3077.019,
+      "p95": 3132.799,
+      "p99": 9447.035
+    },
+    "models": [
+      "google/gemma-4-E2B-it"
+    ]
+  },
+  "large": {
+    "examples": 50,
+    "successful": 50,
+    "failed": 0,
+    "correct": 34,
+    "accuracy": 0.68,
+    "accuracy_on_success": 0.68,
+    "client_latency_ms": {
+      "p50": 5487.281,
+      "p95": 8415.125,
+      "p99": 8780.98
+    },
+    "models": [
+      "google/gemma-4-E4B-it"
+    ]
+  },
+  "paired_outcomes": {
+    "both_correct": 21,
+    "small_only_correct": 1,
+    "large_only_correct": 13,
+    "neither_correct": 15,
+    "oracle_correct": 35,
+    "oracle_accuracy": 0.7
+  },
+  "router_training": {
+    "eligible_examples": 50,
+    "requires_large_examples": 13,
+    "oracle_escalation_rate": 0.26
+  }
+}

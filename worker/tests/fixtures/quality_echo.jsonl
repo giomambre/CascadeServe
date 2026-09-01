@@ -1,0 +1,2 @@
+{"id":"echo-1","prompt":"hello world","reference":"hello world","metric":"exact_match"}
+{"id":"echo-2","prompt":"the answer is 42","reference":"42","metric":"last_number"}

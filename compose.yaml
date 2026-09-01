@@ -1,0 +1,42 @@
+services:
+  worker-1:
+    build:
+      context: .
+      dockerfile: docker/worker.Dockerfile
+    environment:
+      WORKER_ID: worker-1
+      WORKER_PORT: 50052
+      MODEL_BACKEND: echo
+
+  worker-2:
+    build:
+      context: .
+      dockerfile: docker/worker.Dockerfile
+    environment:
+      WORKER_ID: worker-2
+      WORKER_PORT: 50052
+      MODEL_BACKEND: echo
+
+  control-plane:
+    build:
+      context: .
+      dockerfile: docker/control-plane.Dockerfile
+    depends_on:
+      - worker-1
+      - worker-2
+    environment:
+      CONTROL_PLANE_PORT: 50051
+      MAX_IN_FLIGHT: 64
+      MAX_ATTEMPTS: 2
+      REQUEST_TIMEOUT_MS: 5000
+      SCHEDULER_POLICY: round_robin
+      ROUTING_POLICY: none
+      PROMPT_WORD_THRESHOLD: 24
+      ROUTER_MODEL_PATH: ""
+      HEALTH_CHECK_INTERVAL_MS: 1000
+      HEALTH_CHECK_TIMEOUT_MS: 500
+      METRICS_PORT: 8080
+      WORKER_TARGETS: small@worker-1:50052,large@worker-2:50052
+    ports:
+      - "50051:50051"
+      - "8080:8080"

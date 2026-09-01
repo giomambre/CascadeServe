@@ -1,0 +1,10 @@
+{"id":"easy-1","prompt":"Name a color","small_correct":true,"large_correct":true}
+{"id":"easy-2","prompt":"Say hello","small_correct":true,"large_correct":true}
+{"id":"easy-3","prompt":"Opposite of cold","small_correct":true,"large_correct":true}
+{"id":"easy-4","prompt":"Capital of Italy","small_correct":true,"large_correct":true}
+{"id":"easy-5","prompt":"Two plus two","small_correct":true,"large_correct":true}
+{"id":"hard-1","prompt":"Solve this multi step problem and explain every intermediate calculation before giving the final numeric answer","small_correct":false,"large_correct":true}
+{"id":"hard-2","prompt":"Compare three possible algorithms under strict memory latency and correctness constraints then select the best tradeoff","small_correct":false,"large_correct":true}
+{"id":"hard-3","prompt":"Read the detailed evidence identify conflicting claims resolve them and produce a carefully justified conclusion","small_correct":false,"large_correct":true}
+{"id":"hard-4","prompt":"Given several dependent equations derive the missing variable while checking units assumptions and boundary conditions","small_correct":false,"large_correct":true}
+{"id":"hard-5","prompt":"Design a robust distributed protocol that handles retries duplicate messages partial failures deadlines and concurrent requests","small_correct":false,"large_correct":true}

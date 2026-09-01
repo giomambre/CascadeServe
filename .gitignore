@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+target/
+/resume
+/position.txt
+worker/src/cascadeserve/v1/inference_pb2.py
+worker/src/cascadeserve/v1/inference_pb2.pyi
+worker/src/cascadeserve/v1/inference_pb2_grpc.py
+config/*.local.ps1

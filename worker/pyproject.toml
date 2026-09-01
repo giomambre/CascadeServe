@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cascadeserve-worker"
+version = "0.1.0"
+description = "Python inference worker for CascadeServe"
+requires-python = ">=3.12"
+dependencies = [
+    "grpcio==1.83.1",
+    "protobuf==7.35.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "grpcio-tools==1.83.1",
+    "pytest==8.4.1",
+]
+model = [
+    "torch==2.13.0",
+    "torchvision==0.28.0",
+    "transformers==5.15.1",
+    "accelerate==1.14.0",
+    "bitsandbytes==0.50.2",
+    "pillow==12.3.0",
+]
+evaluation = [
+    "scikit-learn==1.9.0",
+]
+
+[project.scripts]
+cascadeserve-worker = "cascadeserve_worker.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

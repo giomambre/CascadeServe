@@ -1,0 +1,512 @@
+{
+  "method": "offline_policy_replay",
+  "policy": {
+    "latency_budget_ms": 4000,
+    "remote_expected_latency_ms": 6042,
+    "latency_request_share": 0.5
+  },
+  "local_baseline": {
+    "examples": 50,
+    "successful": 50,
+    "failed": 0,
+    "correct": 22,
+    "accuracy": 0.44,
+    "accuracy_on_success": 0.44,
+    "client_latency_ms": {
+      "p50": 3077.019,
+      "p95": 3132.799,
+      "p99": 9447.035
+    },
+    "models": [
+      "google/gemma-4-E2B-it"
+    ]
+  },
+  "remote_baseline": {
+    "examples": 50,
+    "successful": 50,
+    "failed": 0,
+    "correct": 47,
+    "accuracy": 0.94,
+    "accuracy_on_success": 0.94,
+    "client_latency_ms": {
+      "p50": 6041.683,
+      "p95": 10794.931,
+      "p99": 14938.673
+    },
+    "models": [
+      "gemma-4-31b-it"
+    ]
+  },
+  "hybrid": {
+    "examples": 50,
+    "successful": 50,
+    "failed": 0,
+    "correct": 35,
+    "accuracy": 0.7,
+    "route_counts": {
+      "remote": 27,
+      "local": 23
+    },
+    "request_class_counts": {
+      "quality": 27,
+      "latency": 23
+    },
+    "client_latency_ms": {
+      "p50": 3792.713,
+      "p95": 8874.075,
+      "p99": 9712.093
+    }
+  },
+  "decisions": [
+    {
+      "example_id": "gsm8k-test-13",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 9712.0934
+    },
+    {
+      "example_id": "gsm8k-test-51",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 4327.7556
+    },
+    {
+      "example_id": "gsm8k-test-54",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5381.6322
+    },
+    {
+      "example_id": "gsm8k-test-61",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5442.9724
+    },
+    {
+      "example_id": "gsm8k-test-65",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6645.544
+    },
+    {
+      "example_id": "gsm8k-test-88",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6041.6829
+    },
+    {
+      "example_id": "gsm8k-test-161",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6555.2867
+    },
+    {
+      "example_id": "gsm8k-test-178",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5779.1575
+    },
+    {
+      "example_id": "gsm8k-test-189",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 7023.9703
+    },
+    {
+      "example_id": "gsm8k-test-191",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 2333.7006
+    },
+    {
+      "example_id": "gsm8k-test-198",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 7740.9117
+    },
+    {
+      "example_id": "gsm8k-test-209",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3075.5214
+    },
+    {
+      "example_id": "gsm8k-test-228",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3106.7959
+    },
+    {
+      "example_id": "gsm8k-test-255",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 2899.0322
+    },
+    {
+      "example_id": "gsm8k-test-285",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 1568.1277
+    },
+    {
+      "example_id": "gsm8k-test-318",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 2989.0247
+    },
+    {
+      "example_id": "gsm8k-test-326",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6316.1378
+    },
+    {
+      "example_id": "gsm8k-test-407",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 7989.7719
+    },
+    {
+      "example_id": "gsm8k-test-440",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 9092.6125
+    },
+    {
+      "example_id": "gsm8k-test-447",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 3366.1906
+    },
+    {
+      "example_id": "gsm8k-test-451",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3103.8065
+    },
+    {
+      "example_id": "gsm8k-test-457",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 3792.7133
+    },
+    {
+      "example_id": "gsm8k-test-476",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 4055.7632
+    },
+    {
+      "example_id": "gsm8k-test-501",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6885.631
+    },
+    {
+      "example_id": "gsm8k-test-541",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3103.6729
+    },
+    {
+      "example_id": "gsm8k-test-563",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3082.2888
+    },
+    {
+      "example_id": "gsm8k-test-569",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 1703.2772
+    },
+    {
+      "example_id": "gsm8k-test-600",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 2616.555
+    },
+    {
+      "example_id": "gsm8k-test-689",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 8874.0747
+    },
+    {
+      "example_id": "gsm8k-test-696",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 8575.5292
+    },
+    {
+      "example_id": "gsm8k-test-704",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5383.6491
+    },
+    {
+      "example_id": "gsm8k-test-735",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3107.5384
+    },
+    {
+      "example_id": "gsm8k-test-775",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 2774.0352
+    },
+    {
+      "example_id": "gsm8k-test-778",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 2374.2335
+    },
+    {
+      "example_id": "gsm8k-test-859",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3235.0629
+    },
+    {
+      "example_id": "gsm8k-test-864",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 4873.3194
+    },
+    {
+      "example_id": "gsm8k-test-865",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5952.6598
+    },
+    {
+      "example_id": "gsm8k-test-919",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6817.5279
+    },
+    {
+      "example_id": "gsm8k-test-940",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 2332.6557
+    },
+    {
+      "example_id": "gsm8k-test-1034",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 4850.0731
+    },
+    {
+      "example_id": "gsm8k-test-1098",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 4365.1413
+    },
+    {
+      "example_id": "gsm8k-test-1116",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3115.888
+    },
+    {
+      "example_id": "gsm8k-test-1130",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3119.1794
+    },
+    {
+      "example_id": "gsm8k-test-1149",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 1992.0216
+    },
+    {
+      "example_id": "gsm8k-test-1206",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3111.5617
+    },
+    {
+      "example_id": "gsm8k-test-1209",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3127.062
+    },
+    {
+      "example_id": "gsm8k-test-1232",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 2304.1961
+    },
+    {
+      "example_id": "gsm8k-test-1236",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 5556.586
+    },
+    {
+      "example_id": "gsm8k-test-1287",
+      "request_class": "quality",
+      "selected_endpoint": "remote",
+      "model_id": "gemma-4-31b-it",
+      "status": "OK",
+      "correct": true,
+      "client_latency_ms": 6221.429
+    },
+    {
+      "example_id": "gsm8k-test-1309",
+      "request_class": "latency",
+      "selected_endpoint": "local",
+      "model_id": "google/gemma-4-E2B-it",
+      "status": "OK",
+      "correct": false,
+      "client_latency_ms": 3108.0049
+    }
+  ]
+}

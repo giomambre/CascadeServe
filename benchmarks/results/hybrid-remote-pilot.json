@@ -1,0 +1,436 @@
+{
+  "created_at": "2026-08-31T18:32:43.911487+00:00",
+  "workload": "hybrid_comparison_remote_pilot",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "logical_cpus": 24,
+    "python": "3.12.10"
+  },
+  "configuration": {
+    "target": "127.0.0.1:50051",
+    "requests": 10,
+    "concurrency": 1,
+    "prompt": "Reply with exactly: CascadeServe benchmark ready",
+    "max_new_tokens": 16,
+    "timeout_seconds": 10.0,
+    "trials": 3,
+    "warmup_requests": 2,
+    "scheduler_policy": "least_in_flight",
+    "worker_profile": "gemma-4-31b-google-ai-studio",
+    "latency_budget_ms": 0,
+    "max_cost_usd": 0.0,
+    "require_local": false,
+    "preferred_region": "global"
+  },
+  "aggregate": {
+    "trials": 3,
+    "successful_requests": 30,
+    "failed_requests": 0,
+    "throughput_requests_per_second": {
+      "mean": 1.037,
+      "median": 1.03,
+      "stdev": 0.012,
+      "min": 1.03,
+      "max": 1.05
+    },
+    "latency_ms": {
+      "p50": {
+        "mean": 961.136,
+        "median": 933.51,
+        "stdev": 49.274,
+        "min": 931.872,
+        "max": 1018.025
+      },
+      "p95": {
+        "mean": 1089.649,
+        "median": 1098.542,
+        "stdev": 22.192,
+        "min": 1064.39,
+        "max": 1106.016
+      },
+      "p99": {
+        "mean": 1089.649,
+        "median": 1098.542,
+        "stdev": 22.192,
+        "min": 1064.39,
+        "max": 1106.016
+      }
+    }
+  },
+  "trials": [
+    {
+      "index": 1,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 1.03,
+        "latency_ms": {
+          "p50": 931.872,
+          "p95": 1106.016,
+          "p99": 1106.016
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-api": 10
+        },
+        "attempt_counts": {
+          "1": 10
+        },
+        "tier_counts": {
+          "premium": 10
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.05,
+        "duration_seconds": 9.713
+      },
+      "results": [
+        {
+          "latency_ms": 1106.0159,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1082.1562,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 931.8725,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 899.6667,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 900.3483,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 868.3214,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 959.2103,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 923.9973,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1015.2612,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1025.2944,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 1.05,
+        "latency_ms": {
+          "p50": 933.51,
+          "p95": 1064.39,
+          "p99": 1064.39
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-api": 10
+        },
+        "attempt_counts": {
+          "1": 10
+        },
+        "tier_counts": {
+          "premium": 10
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.05,
+        "duration_seconds": 9.55
+      },
+      "results": [
+        {
+          "latency_ms": 904.1656,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1027.3387,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 934.3189,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 933.5103,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1064.3901,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 912.3975,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 868.2782,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 989.0878,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 883.0519,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1032.8852,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 1.03,
+        "latency_ms": {
+          "p50": 1018.025,
+          "p95": 1098.542,
+          "p99": 1098.542
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-api": 9,
+          "gemma-4-e2b": 1
+        },
+        "attempt_counts": {
+          "1": 9,
+          "2": 1
+        },
+        "tier_counts": {
+          "premium": 9,
+          "fast": 1
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.05,
+        "duration_seconds": 9.673
+      },
+      "results": [
+        {
+          "latency_ms": 1025.8262,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1038.0918,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 974.705,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 953.9988,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1087.4158,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1055.8384,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1098.5416,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1015.6774,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 1018.0248,
+          "status": "OK",
+          "worker_id": "gemma-api",
+          "attempts": 1,
+          "selected_tier": "premium",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        },
+        {
+          "latency_ms": 404.0668,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 2,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.05
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "input": "..\\benchmarks\\router-training.jsonl",
+  "model_output": "..\\benchmarks\\models\\router.properties",
+  "samples": 50,
+  "requires_large_samples": 13,
+  "test_samples": 10,
+  "threshold": 0.5,
+  "seed": 42,
+  "features": [
+    "word_count",
+    "char_count",
+    "digit_count",
+    "symbol_count",
+    "newline_count"
+  ],
+  "metrics": {
+    "accuracy": 0.4,
+    "precision": 0.2,
+    "recall": 0.3333333333333333,
+    "roc_auc": 0.2857142857142857
+  }
+}

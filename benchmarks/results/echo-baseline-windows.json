@@ -1,0 +1,6038 @@
+{
+  "created_at": "2026-08-31T09:25:49.231840+00:00",
+  "workload": "echo_transport_baseline",
+  "configuration": {
+    "target": "localhost:50051",
+    "requests": 1000,
+    "concurrency": 32,
+    "prompt": "CascadeServe benchmark request",
+    "max_new_tokens": 8,
+    "timeout_seconds": 5.0,
+    "scheduler_policy": "round_robin",
+    "worker_profile": "two_echo_workers_no_delay"
+  },
+  "summary": {
+    "requests": 1000,
+    "successful": 1000,
+    "failed": 0,
+    "throughput_requests_per_second": 3362.94,
+    "latency_ms": {
+      "p50": 7.198,
+      "p95": 13.602,
+      "p99": 59.678
+    },
+    "status_counts": {
+      "OK": 1000
+    },
+    "worker_counts": {
+      "worker-1": 500,
+      "worker-2": 500
+    },
+    "attempt_counts": {
+      "1": 1000
+    },
+    "duration_seconds": 0.297
+  },
+  "results": [
+    {
+      "latency_ms": 63.4567,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 63.3464,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 62.8671,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.3538,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 62.1485,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 60.0951,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 63.2018,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.535,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 62.0036,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 58.6526,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.4086,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 58.586,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.4697,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 60.4872,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.6781,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 60.0911,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.4036,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 58.2226,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 55.8249,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 56.1762,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 57.8726,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 57.3341,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 59.747,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 57.7505,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 58.9022,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 54.5982,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 56.7899,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 57.1063,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 54.9075,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 54.5907,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 57.1367,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 54.26,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6319,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7141,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8524,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8694,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2938,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5111,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7285,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6579,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0945,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.3221,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.1392,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.607,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6595,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5326,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5089,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6005,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.3624,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 21.937,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.8222,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3939,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 19.2099,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.1375,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5406,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.0051,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 19.4319,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 19.4807,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3795,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.7223,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.706,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6418,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2551,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 17.5934,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.0627,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.2057,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.3547,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 16.1068,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.5884,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 16.1301,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.2814,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.2416,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.7829,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.1533,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.1617,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.0318,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.7378,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.0779,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.7956,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.8196,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.2946,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.6024,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.622,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.1264,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.6222,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 14.2206,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.65,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.6402,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.278,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 13.0255,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6385,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.3258,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.7826,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.024,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.1525,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.8066,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.7486,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.4609,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5328,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.225,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3823,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.1338,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6997,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6805,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.2545,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1043,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.0205,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7235,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5679,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6851,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4029,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.972,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.7011,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1165,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.646,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.8983,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.015,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.634,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5519,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5611,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.7417,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7792,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1891,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.674,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0309,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5636,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6229,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5113,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5643,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4308,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5615,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8164,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2783,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7351,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8586,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8397,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0266,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4059,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.009,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8637,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.638,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4816,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5987,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6169,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2845,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5627,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2905,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4724,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2655,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6099,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0467,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.708,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9902,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1017,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0092,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8009,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.882,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.2329,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7949,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7602,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5672,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1624,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6308,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6084,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0649,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3455,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1533,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9602,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.7774,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4233,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7486,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9047,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.649,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.4657,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9866,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8388,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.0375,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6242,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2165,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2159,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.3455,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1458,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.8732,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3608,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1938,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2609,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5657,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8798,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.8048,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.7095,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5302,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5962,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.0813,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.4708,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.5131,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.6438,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.7218,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3936,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 12.0384,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.4827,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.4416,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5042,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1098,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9802,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.4708,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.9275,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.9,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.1973,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6134,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2512,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.8063,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3382,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.349,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5947,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.3799,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.8549,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.6299,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2748,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.0567,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.0466,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9636,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8801,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3584,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1524,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.0532,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0073,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0214,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2119,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7012,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7955,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9449,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2694,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7045,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4974,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1265,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3023,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2946,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.5357,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4374,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8499,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.607,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8617,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8905,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5555,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9116,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1721,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2475,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3686,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9677,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0768,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8944,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8204,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3524,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0978,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1642,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7911,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1188,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7929,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.466,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8994,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5191,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5609,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.907,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8716,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8888,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4384,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.1178,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.509,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2459,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9242,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0587,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5143,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5412,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4075,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7307,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2673,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0029,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6445,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7188,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8969,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0254,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6045,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8473,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4532,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9068,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0271,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2929,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0802,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0299,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.4198,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9136,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0767,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0953,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4755,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2835,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5124,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0767,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1006,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7532,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1444,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.9034,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1858,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4078,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.988,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.963,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1485,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0769,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5072,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6764,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0638,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6501,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4999,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9948,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6576,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.597,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7041,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9142,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0176,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7242,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6311,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7632,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5474,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2888,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0612,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.1523,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4369,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4627,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3408,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0964,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4169,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7571,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.489,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4812,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6228,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9657,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9838,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4022,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8948,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6379,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0995,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2675,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8387,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.8627,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.9331,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8427,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9096,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0287,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8207,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6287,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.6022,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0446,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7794,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5593,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.123,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7938,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9433,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5121,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6248,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9319,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3251,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3945,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1146,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1198,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7066,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.765,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9434,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9177,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5942,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5508,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6325,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5822,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7947,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4016,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4258,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9083,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2309,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8946,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9454,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0622,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4406,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9917,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9154,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9653,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5185,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4186,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3064,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5629,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3919,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5543,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7546,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.645,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4692,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0462,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3871,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7914,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2691,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.225,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 11.0401,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3815,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3535,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0516,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4329,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.939,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9895,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7704,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.698,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.365,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8275,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8117,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7261,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2113,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8653,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5436,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7244,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1167,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3482,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7913,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3766,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5783,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1035,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5219,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0856,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6464,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0317,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2772,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8375,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7835,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7729,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2149,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7091,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2258,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4191,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5114,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4447,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2785,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3413,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5534,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9406,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6138,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.088,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3716,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0097,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0673,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7811,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7391,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4772,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6807,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.892,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2918,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3494,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.234,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.5354,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9486,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.594,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6095,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1534,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4753,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3757,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1293,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.0204,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3066,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7139,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4283,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.419,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4275,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4623,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4832,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4784,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.332,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4146,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7226,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2082,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3821,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2783,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.937,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1771,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.513,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.469,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6121,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2842,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7245,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8543,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3223,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8297,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3137,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.1718,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4298,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6801,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0338,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5303,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3608,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8282,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5042,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4179,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4399,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3308,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2315,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8299,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7418,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1253,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.9782,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7011,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2863,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4022,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6152,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6565,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5582,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4052,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1196,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1978,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1841,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5566,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3196,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9273,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9138,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4929,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2216,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2197,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2486,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4454,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0313,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7122,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9077,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3553,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7324,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8511,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7736,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6665,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5504,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1679,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.3449,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5917,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2857,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5948,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5311,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5266,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0055,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5242,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7569,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9469,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3662,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1194,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4244,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7613,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0691,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9519,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1543,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8981,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6499,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2835,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8026,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5836,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3172,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2143,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7056,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7219,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5693,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3918,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5182,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1591,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3835,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1562,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7003,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.778,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6029,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.589,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7363,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8693,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0389,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.73,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.588,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.313,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4435,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2251,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3028,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5581,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0046,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1207,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3989,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5054,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4801,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8594,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2662,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7554,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1407,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9807,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.14,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5743,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6713,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0657,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.3662,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8701,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8987,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6516,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0547,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3669,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4404,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3894,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3513,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7662,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2222,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.591,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0199,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.1608,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.28,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7626,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.774,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1043,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9864,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0953,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6517,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9316,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1443,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4259,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9777,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6912,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4911,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0139,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9155,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0957,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6623,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5764,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6435,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8163,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4813,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2839,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4257,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7782,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.45,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.8161,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0801,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.327,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.4613,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6273,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6159,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7456,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8649,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.441,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6846,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7227,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6121,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7927,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3264,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4183,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2666,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3059,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2767,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3948,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7269,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3661,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1705,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5617,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.077,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2765,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0653,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.747,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2659,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8833,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5466,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4601,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.4254,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.92,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9751,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5477,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5645,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6515,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1316,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2862,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3896,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.2956,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6267,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6344,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2327,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2735,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8171,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0091,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9232,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8786,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9852,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4068,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9417,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3893,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8166,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5961,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9092,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6935,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0071,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0232,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5743,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6932,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9871,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5054,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5284,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3788,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8174,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3709,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0915,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3576,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8897,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7811,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2797,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.013,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.34,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7852,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.818,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4421,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3357,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5414,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1547,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3535,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9466,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1034,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7117,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0028,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8013,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8568,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8625,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.301,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3315,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9989,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5476,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.987,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4213,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2341,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.387,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.122,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0671,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6704,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3518,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0069,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9781,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0022,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8938,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.459,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5257,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.573,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8228,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9588,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9882,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6666,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6592,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3462,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1309,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2026,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4577,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5272,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6757,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4235,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5056,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2532,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.4251,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0593,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3047,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7101,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8861,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5852,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.5971,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5584,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.347,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0294,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1666,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1988,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4103,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2848,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5912,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8339,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0588,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.96,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0895,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5621,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7511,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3565,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4405,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9778,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7281,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0241,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2001,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0307,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0809,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8763,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.73,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8681,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4343,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7294,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0084,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7121,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8675,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2475,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8756,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.2535,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6776,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7122,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1935,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8768,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6285,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1221,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2522,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9744,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3152,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.1431,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9353,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9182,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2804,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5501,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1246,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7726,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1668,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8753,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0985,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7825,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4197,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6753,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4541,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7881,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2065,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7256,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2834,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8264,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6848,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4944,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2342,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5714,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5143,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5475,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.7587,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.0681,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9615,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6365,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7621,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3331,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.1503,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3179,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9599,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6529,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9715,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.55,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9604,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.836,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6492,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.8527,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8202,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.9631,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0557,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6135,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5723,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5729,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0261,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7726,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3089,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7651,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.015,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0317,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1025,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.2687,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.6694,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2002,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5817,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3742,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1201,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8824,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5558,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.073,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1144,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3193,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1117,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.069,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8619,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.997,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8695,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8041,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7811,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3655,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1107,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.4752,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.3802,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5796,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4152,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3003,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.819,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.8943,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3722,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.0845,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 10.2256,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1982,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5764,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.4576,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7721,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0818,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1323,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.6606,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1114,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.9184,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6158,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4492,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9254,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.6231,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6274,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3732,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.3168,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.1669,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6779,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.5186,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.763,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 9.4981,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.0068,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.5518,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6288,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8419,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3703,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.9752,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.292,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7699,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1477,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5505,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.463,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.5355,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9058,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6265,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.7096,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8515,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8164,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7997,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1903,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 7.4136,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3761,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.434,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.6953,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5482,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 8.2033,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0379,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2756,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9891,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1465,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.3037,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5234,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1939,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.968,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8099,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.4614,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5478,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4233,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1315,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1319,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0654,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.889,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8606,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6186,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.7297,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2974,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.7306,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.5543,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0776,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.2379,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1618,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7875,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.798,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1743,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7559,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3351,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3316,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.4171,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.084,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8032,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9607,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.2052,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1911,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.341,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.0938,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8109,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3784,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9487,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.8689,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6415,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.7905,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.3782,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.6021,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 5.1642,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.8342,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0072,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.4583,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0365,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0669,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3195,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.1645,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.9304,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.426,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 6.1195,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.1675,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3051,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.1935,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 3.8308,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3816,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0295,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.2064,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 3.708,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.3248,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0435,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 3.8354,
+      "status": "OK",
+      "worker_id": "worker-2",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 4.0322,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    },
+    {
+      "latency_ms": 3.8573,
+      "status": "OK",
+      "worker_id": "worker-1",
+      "attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "created_at": "2026-08-31T18:31:30.978668+00:00",
+  "workload": "hybrid_comparison_local_pilot",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "logical_cpus": 24,
+    "python": "3.12.10"
+  },
+  "configuration": {
+    "target": "127.0.0.1:50061",
+    "requests": 10,
+    "concurrency": 1,
+    "prompt": "Reply with exactly: CascadeServe benchmark ready",
+    "max_new_tokens": 16,
+    "timeout_seconds": 10.0,
+    "trials": 3,
+    "warmup_requests": 2,
+    "scheduler_policy": "least_in_flight",
+    "worker_profile": "gemma-4-e2b-local",
+    "latency_budget_ms": 0,
+    "max_cost_usd": 0.0,
+    "require_local": true,
+    "preferred_region": ""
+  },
+  "aggregate": {
+    "trials": 3,
+    "successful_requests": 30,
+    "failed_requests": 0,
+    "throughput_requests_per_second": {
+      "mean": 12.58,
+      "median": 12.68,
+      "stdev": 0.478,
+      "min": 12.06,
+      "max": 13.0
+    },
+    "latency_ms": {
+      "p50": {
+        "mean": 75.234,
+        "median": 73.925,
+        "stdev": 7.132,
+        "min": 68.847,
+        "max": 82.93
+      },
+      "p95": {
+        "mean": 96.331,
+        "median": 97.839,
+        "stdev": 4.403,
+        "min": 91.373,
+        "max": 99.782
+      },
+      "p99": {
+        "mean": 96.331,
+        "median": 97.839,
+        "stdev": 4.403,
+        "min": 91.373,
+        "max": 99.782
+      }
+    }
+  },
+  "trials": [
+    {
+      "index": 1,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 12.06,
+        "latency_ms": {
+          "p50": 82.93,
+          "p95": 97.839,
+          "p99": 97.839
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-4-e2b": 10
+        },
+        "attempt_counts": {
+          "1": 10
+        },
+        "tier_counts": {
+          "fast": 10
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.07,
+        "duration_seconds": 0.829
+      },
+      "results": [
+        {
+          "latency_ms": 97.8393,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 95.6344,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 85.3133,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 86.0339,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 82.9303,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 71.3032,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 89.4151,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 68.5754,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 81.1106,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 70.5343,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 12.68,
+        "latency_ms": {
+          "p50": 73.925,
+          "p95": 99.782,
+          "p99": 99.782
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-4-e2b": 10
+        },
+        "attempt_counts": {
+          "1": 10
+        },
+        "tier_counts": {
+          "fast": 10
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.07,
+        "duration_seconds": 0.788
+      },
+      "results": [
+        {
+          "latency_ms": 88.3928,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 73.9254,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 73.3137,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 74.4101,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 99.7825,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 92.0177,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 74.0295,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 73.178,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 68.2104,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 70.5956,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "summary": {
+        "requests": 10,
+        "successful": 10,
+        "failed": 0,
+        "throughput_requests_per_second": 13.0,
+        "latency_ms": {
+          "p50": 68.847,
+          "p95": 91.373,
+          "p99": 91.373
+        },
+        "status_counts": {
+          "OK": 10
+        },
+        "worker_counts": {
+          "gemma-4-e2b": 10
+        },
+        "attempt_counts": {
+          "1": 10
+        },
+        "tier_counts": {
+          "fast": 10
+        },
+        "routing_policy_counts": {
+          "hybrid": 10
+        },
+        "mean_routing_score": 0.07,
+        "duration_seconds": 0.769
+      },
+      "results": [
+        {
+          "latency_ms": 91.3731,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 71.4422,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 68.847,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 67.0044,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 67.7646,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 90.2717,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 84.4214,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 68.4981,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 91.2876,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        },
+        {
+          "latency_ms": 67.7575,
+          "status": "OK",
+          "worker_id": "gemma-4-e2b",
+          "attempts": 1,
+          "selected_tier": "fast",
+          "routing_policy": "hybrid",
+          "routing_score": 0.07
+        }
+      ]
+    }
+  ]
+}
